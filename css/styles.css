@@ -1,0 +1,364 @@
+ /*logoBlue #95D0EA */
+/* logoGreen #D8E03C  */
+/* logoRed #F27A92  */
+
+/*@font-face {
+  font-family: waiFont;
+  src: url('fonts/BPreplayItalics.otf');
+}*/
+body {
+	/*font-family: waiFont;*/
+  font-family: Calibri, sans-serif;
+	background-color: white;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+.buttonBig {
+   display: inline-block;
+   padding: 0.75rem 1.25rem;
+   border-radius: 10rem;
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 1rem;
+   letter-spacing: 0.15rem;
+   transition: all 0.3s;
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
+}
+.layered-image {
+  background: linear-gradient(to right, transparent),
+    url('../src/images/photo1.jpg');
+}
+.menuLinkColorMobile{
+  color: white !important;
+}
+.show{
+  color: #F27A92 !important;
+}
+.dropMenuMobile{
+  background-color: rgba(149,208,234, 0) !important;
+  border: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/*.dropItemMobile{
+  color: #F27A92 !important;
+}*/
+.hamburgerMenuButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+.navbar-light .navbar-toggler {
+	color: white;
+	border-color: white;
+}
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(149,208,234); /* Black fallback color */
+  background-color: rgba(149,208,234, 0.9);
+  
+  /*background-color: rgb(68, 110, 205); /* Black fallback color */
+  /*background-color: rgba(68, 110, 205, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.overlayBody{
+	height: 100%;
+	overflow: hidden;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+.line {
+  fill: none;
+  stroke: #95D0EA;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+#navbarSupportedContent > ul > li{
+	margin-left: 10px;
+}
+
+#navbarSupportedContent > ul{
+	margin-bottom: 0px;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #95D0EA;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.logoBlue{
+	color: #95D0EA;
+}
+.backgroundBlue{
+  background-color: #95D0EA;
+}
+.logo{
+  /*width: 80px;
+  height: 280px;*/
+  transition: width 0.5s, height 0.5s;
+}
+.navbar-light .navbar-nav .nav-link {
+	/*color: black;*/
+  color: #838487;
+  font-weight: bold;
+}
+.h1Color{
+  color: #838487;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #95D0EA;
+}
+.navbar-light .navbar-nav .nav-link.active {
+	color: #95D0EA;
+}
+.underline {
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+  padding-right: 3%;
+  padding-bottom: 3%;
+  position: relative;
+  display: inline-block;
+}
+.underline:after {
+  display:block;
+  content: '';
+  height:4px;
+  background: #95D0EA;
+  transform: scaleX(0.0001);
+  transition: transform 250ms ease-in-out;
+  box-shadow: inset -40px 0px 30px -25px #fff, inset 40px 0px 30px -25px #fff;
+}
+.underline:hover:after {
+  transform: scaleX(1);
+}
+.slick-next{
+	right: 20px;
+}
+.slick-prev{
+	left: 10px;
+	z-index: 10;
+}
+.slick-prev:before, .slick-next:before{
+	height: 40px;
+}
+.about > div > button.slick-next:before{
+  color: #95D0EA;
+}
+.about > div > button.slick-prev:before{
+  color: #95D0EA;
+}
+#content{
+	display: none;
+}
+.headerLink:hover{
+	cursor: pointer;
+}
+.parallax-window{
+	background: transparent;
+	color: white;
+	padding: 3rem 3rem;
+}
+.contact-img{
+	padding: 3rem 3rem;
+	height: 15rem;
+	width: 100%;
+}
+.jumbotron {
+	padding: 2rem 2rem;
+	margin-bottom: 2rem;
+	background-color: white;
+	border-radius: .3rem;  
+}
+.footer{
+	background-color: #95D0EA;
+	color: white;
+	padding: 3rem 3rem;
+}
+.btn-blue{
+	background-color: #95D0EA;
+	color: white;
+}
+.rounded-img{
+	border-radius: 50% !important;
+}
+.img-with-text {
+  position: relative;
+  /*Maximum width */
+  /*max-width: 800px;  */
+  margin: 0 auto; /* Center it */
+}
+
+.img-with-text .text-content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 10px; /* Some padding */
+}
+.logoBackground{
+  /*background-image: url('../src/images/logo.png');*/
+  /*background-size: cover;*/
+  /*opacity: 0.5;*/
+  /*height: 600px;*/
+  display: block;
+  position: relative;
+}
+.logoBackground::after{
+  content: "";
+  background: url('../src/images/logo.png');
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /*height: 400px;
+  /*background-size: cover;*/
+
+}*/
+/*@media only screen and (max-width: 1023px) {
+  .logoBackground{
+    background-image: url('../src/images/logo.png');
+    background-size: cover;
+    opacity: 0.5;
+    height: 410px;
+  }
+};
+@media only screen and (max-width: 767px) {
+  .logoBackground{
+    background-image: url('../src/images/logo.png');
+    background-size: cover;
+    opacity: 0.5;
+    height: 300px;
+  }
+};*/
+/*.parallax-window {
+    min-height: 100px;
+    background: transparent;
+}*/
+/*@media only screen and (max-width: 600px) {
+  	body > div.slider.slick-initialized.slick-slider > div > div > img{
+		height: 300px;
+	}
+}*/
+/*.navTransition{
+  background-color: rgba(255,255,255, 0);
+  transition: background-color 0.5s;
+}
+.navTransition:hover{
+  background-color: rgba(255,255,255, 1) !important;
+}
+.navbar{
+  position: fixed;
+  left: 0;
+  top:  0;
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="96x96" href="src/images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="src/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="src/slick/slick-theme.css"/>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="src/aos/aos.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+<!--     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+ -->
+    <title>ЈП Стара планина</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white navTransition">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="indexEN.html">
+            <img src="src/images/english-flag.png" style="height: 25px">
+          </a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="list-style: none;padding-left: 0;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle menuLinkColorMobile" href="oNama.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                О нама
+              </a>
+              <ul class="dropdown-menu dropMenuMobile" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item dropItemMobile" href="menadzment.html">Менаџмент</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="finansije.html">Финансије</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="akta.html">Акта</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle menuLinkColorMobile" href="oStarojPlanini.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                O Старој планини
+              </a>
+              <ul class="dropdown-menu dropMenuMobile" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item dropItemMobile" href="lokacija.html">Локација</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="priroda.html">Природа</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="znamenitosti.html">Знаменитости</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="manifestacije.html">Манифестације</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="smestaj.html">Смештај</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="mape.html">Мапе пешачких стаза</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle menuLinkColorMobile" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Инвестиције
+              </a>
+              <ul class="dropdown-menu dropMenuMobile" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item dropItemMobile" href="masterPlan.html">Мастер план</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="urbanistickiPlanovi.html">Урбанистички планови</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="urbanistickiProjekti.html">Урбанистички пројекти</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="katalogZaInvestitore.html">Каталог за инвеститоре</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="javniPozivi.html">Јавни позиви</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="promoSpotovi.html">Промо спотови</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menuLinkColorMobile" aria-current="page" href="kontakt.html">Контакт</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menuLinkColorMobile" href="informator.html">Информатор</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="src/images/logoNav.png" alt="Wai Genetics" class="logo">
+        </a>
+        <button class="hamburgerMenuButton navbar-toggler" onclick="openNav(this)" aria-label="Main Menu">
+          <svg width="40" height="40" viewBox="0 0 100 100">
+            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+        <!-- </button> -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <div 
+                class="dropdown"
+                onmouseleave="handleHoverLeave('oNama')"
+              >
+                <a 
+                  class="nav-link underline dropdown-toggle" href="oNama.html"
+                  onmouseover="handleHover('oNama')"  
+                >
+                  О нама
+                </a>
+                <ul 
+                  class="dropdown-menu animate__animated animate__faster" 
+                  id="oNama"
+                >
+                  <li><a class="dropdown-item" href="menadzment.html">Менаџмент</a></li>
+                <li><a class="dropdown-item" href="finansije.html">Финансије</a></li>
+                <li><a class="dropdown-item" href="akta.html">Акта</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div 
+                class="dropdown"
+                onmouseleave="handleHoverLeave('oStarojPlanini')"
+              >
+                <a 
+                  class="nav-link underline dropdown-toggle" href="oStarojPlanini.html" 
+                  onmouseover="handleHover('oStarojPlanini')"
+                >
+                  О Старој планини
+                </a>
+                <ul 
+                  class="dropdown-menu animate__animated animate__faster" 
+                  id="oStarojPlanini" 
+                >
+                  <li><a class="dropdown-item" href="lokacija.html">Локација</a></li>
+                  <li><a class="dropdown-item" href="priroda.html">Природа</a></li>
+                  <li><a class="dropdown-item" href="znamenitosti.html">Знаменитости</a></li>
+                  <li><a class="dropdown-item" href="manifestacije.html">Манифестације</a></li>
+                  <li><a class="dropdown-item" href="smestaj.html">Смештај</a></li>
+                  <li><a class="dropdown-item" href="mape.html">Мапе пешачких стаза</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div 
+                class="dropdown" 
+                onmouseleave="handleHoverLeave('investicije')"
+              >
+                <a 
+                  class="nav-link underline dropdown-toggle" href="investicije.html"
+                  onmouseover="handleHover('investicije')" 
+                >
+                  Инвестиције
+                </a>
+                <ul class="dropdown-menu animate__animated animate__faster" id="investicije">
+                  <li><a class="dropdown-item" href="masterPlan.html">Мастер план</a></li>
+                  <li><a class="dropdown-item" href="urbanistickiPlanovi.html">Урбанистички планови</a></li>
+                  <li><a class="dropdown-item" href="urbanistickiProjekti.html">Урбанистички пројекти</a></li>
+                  <li><a class="dropdown-item" href="katalogZaInvestitore.html">Каталог за инвеститоре</a></li>
+                  <li><a class="dropdown-item" href="javniPozivi.html">Јавни позиви</a></li>
+                  <li><a class="dropdown-item" href="promoSpotovi.html">Промо спотови</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link underline" aria-current="page" href="kontakt.html">Контакт</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link underline" aria-current="page" href="informator.html">Информатор</a>
+            </li>
+            <li class="nav-item pt-2">
+              <a href="indexEN.html">
+                <img src="src/images/english-flag.png" style="height: 20px">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- CONTENT -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <defs>
+        <linearGradient id="grad1" gradientTransform="rotate(90)">
+          <stop offset="0%" stop-color="#95D0EA" stop-opacity="0"/>
+          <stop offset="80%" stop-color="#95D0EA" />
+        </linearGradient>
+      </defs>
+      <path stroke="url(#grad1)" fill="url(#grad1)" fill-opacity="1" d="M0,160L60,144C120,128,240,96,360,117.3C480,139,600,213,720,224C840,235,960,181,1080,160C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+
+    <div class="container">
+      <h1 align="center">Смештај</h1>
+      <div class="jumbotron">
+        <div class="row d-flex align-items-center">
+          <div 
+            class="col-md-6 col-12" 
+            data-aos="fade-right" 
+            data-aos-once="true" 
+            data-aos-duration="1500"
+          >
+            <!-- <h2>Црква Свете Богородице</h2> -->
+            <p class="h5">
+              Хотел “Стара Планина” ушушкан у нетакнутој природи на висини од 1.470 метара, представља идеално место за одмор. У самом срцу истоименог ски центра, удаљен свега 20 метара од ски стаза, поред прве гондоле у Србији, пружа јединствен доживљај активног одмора и потпуног опуштања. Хотел Стара планина је савременог дизајна и располаже са 146 комфорних смештајних јединица. Препустите се уживању у Велнес и Спа центру, или у једном од ресторана, у врхунској храни и широком избору вина из нашег краја. Хотел “Стара Планина” представља идеалну дестинацију за породичан одмор са акцентом на целодневној бризи о деци у играоници и омладинском клубу.<br><br>
+              Врхунски квалитет услуге и брига о гостима чине боравак у овом објекту са четри звездице незаборавним.<br><br>
+              Телефон: +381 (0)19 3195 134<br><br>
+              <a href='https://hotelstaraplanina.com'>https://hotelstaraplanina.com/</a>
+            </p>
+          </div>
+          <div 
+            class="col-md-6 col-12 d-flex justify-content-center"
+            data-aos="fade-right" 
+            data-aos-once="true" 
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <div>
+              <img src="src/images/Hotel Stara planina.jpg" class="img-fluid rounded">
+              <!-- <p class="small">Црква Свете Богородице</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="jumbotron">
+        <div class="row d-flex align-items-center">
+          <div 
+            class="col-md-6 col-12 d-flex justify-content-center"
+            data-aos="fade-right" 
+            data-aos-once="true" 
+            data-aos-duration="1500"
+          >
+            <div>
+              <img src="src/images/hotelBabinZub.jpeg" class="img-fluid rounded">
+              <!-- <p class="small">Манастир Свете Тројице</p> -->
+            </div>
+          </div>
+          <div 
+            class="col-md-6 col-12" 
+            data-aos="fade-right" 
+            data-aos-once="true" 
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <!-- <h1>Манастир Свете Тројице</h1> -->
+            <p class="h5">
+              Хотел „Бабин зуб“, налази се у подножју истоимене стене. Саграђен је 2000. године. Располаже са 67 лежајева у двокреветним и трокреветним собама.
+              <br>
+              <br>
+              Тел: +381 (0)19 731 780
+              <br>
+              <br>
+              <a href='https://hotelstaraplanina.com/hotel-babin-zub'>https://hotelstaraplanina.com/hotel-babin-zub</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="jumbotron">
+        <div class="row d-flex align-items-center">
+          <div 
+            class="col-md-6 col-12" 
+            data-aos="fade-right" 
+            data-aos-once="true" 
+            data-aos-duration="1500"
+          >
+            <!-- <h2>Црква Свете Богородице</h2> -->
+            <p class="h5">
+              Планинарски дом „Миџор“, први је смештајни капацитет на Бабином зубу. Налази се на 1.580 метара надморске висине, испод Бабиног зуба. Саграђен је 1951. године, и од тада је више пута дограђиван и реновиран. Располаже са 72 лежаја. Од највишег врха Србије, Миџора, удаљен је 5,4 км ваздушном линијом, дужина пешачке стазе до Миџора је 8,6 км, а сам успон траје око три сада.
+              <br> 
+              <br> 
+              Тел + 381 (0)19 732 543
+              <br> 
+              <br> 
+              <a href='https://hotelstaraplanina.com/sr/planinarski-dom-midzor/'>https://hotelstaraplanina.com/sr/planinarski-dom-midzor/</a>
+            </p>
+          </div>
+          <div 
+            class="col-md-6 col-12 d-flex justify-content-center"
+            data-aos="fade-right" 
+            data-aos-once="true" 
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <div>
+              <img src="src/images/Planinarski dom Midzor.jpg" class="img-fluid rounded">
+              <!-- <p class="small">Црква Свете Богородице</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="jumbotron">
+        <div class="row d-flex align-items-center">
+          <div 
+            class="col-md-6 col-12 d-flex justify-content-center"
+            data-aos="fade-right" 
+            data-aos-once="true" 
+            data-aos-duration="1500"
+          >
+            <div>
+              <img src="src/images/Privatni smestaj.jpg" class="img-fluid rounded">
+              <!-- <p class="small">Манастир Свете Тројице</p> -->
+            </div>
+          </div>
+          <div 
+            class="col-md-6 col-12" 
+            data-aos="fade-right" 
+            data-aos-once="true" 
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <!-- <h1>Манастир Свете Тројице</h1> -->
+            <p class="h5">
+              Приватни смештај на Старој планинини може се видети на сајту Туристичке организације општине Књажевац.
+              <br>
+              <br>
+              Тел: +381 (0)19 731 780
+              <br>
+              <br>
+              <a href='https://www.toknjazevac.org.rs/index.php/smestaj'>https://www.toknjazevac.org.rs/index.php/smestaj</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    
+    <div class="footer text-center">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h4 class="fw-bold">Wei Genetics</h4><br>
+          <!-- Contact through waimail:
+          <br>
+          <br> -->
+          CCO. Kåre Johan Teigen
+          <br>
+          +47 90823164
+          <br>
+          kaare@waigenetics.no
+          <!-- <br>
+          <br>
+          CEO. Petter Johansen
+          <br>
+          petter@waigenetics.no -->
+        </div>
+        <div class="col-md-4">
+          <!-- <br>
+          CEO. Petter Johansen
+          <br>
+          petter@waigenetics.no -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11602.573974833069!2d22.5839861!3d43.3635673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6145a3e5ec12ed!2sHotel%20Stara%20Planina!5e0!3m2!1sen!2srs!4v1657978480271!5m2!1sen!2srs" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-4">
+          <h4 class="fw-bold">Get connected</h4><br>
+          <a href="https://www.linkedin.com/company/wai-genetics">
+            <img src="src/images/linkedin-logo.png" class="img-fluid" style="height: 40px;">
+          </a>
+          <a href="https://www.facebook.com/Waigenetics">
+            <img src="src/images/facebook-logo.png" class="img-fluid" style="height: 40px;">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- slick slider requirements -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/parallax.min.js"></script>
+    <script type="text/javascript" src="src/slick/slick.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="src/aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="96x96" href="src/images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="src/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="src/slick/slick-theme.css"/>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="src/aos/aos.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Wai Genetics | Om Oss</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white navTransition">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="indexEN.html">
+            <img src="src/images/english-flag.png" style="height: 25px">
+          </a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="list-style: none;padding-left: 0;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle menuLinkColorMobile" href="oNama.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                О нама
+              </a>
+              <ul class="dropdown-menu dropMenuMobile" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item dropItemMobile" href="menadzment.html">Менаџмент</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="finansije.html">Финансије</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="akta.html">Акта</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle menuLinkColorMobile" href="oStarojPlanini.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                O Старој планини
+              </a>
+              <ul class="dropdown-menu dropMenuMobile" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item dropItemMobile" href="lokacija.html">Локација</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="priroda.html">Природа</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="znamenitosti.html">Знаменитости</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="manifestacije.html">Манифестације</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="smestaj.html">Смештај</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="mape.html">Мапе пешачких стаза</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle menuLinkColorMobile" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Инвестиције
+              </a>
+              <ul class="dropdown-menu dropMenuMobile" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item dropItemMobile" href="masterPlan.html">Мастер план</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="urbanistickiPlanovi.html">Урбанистички планови</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="urbanistickiProjekti.html">Урбанистички пројекти</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="katalogZaInvestitore.html">Каталог за инвеститоре</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="javniPozivi.html">Јавни позиви</a></li>
+                <li><a class="dropdown-item dropItemMobile" href="promoSpotovi.html">Промо спотови</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menuLinkColorMobile" aria-current="page" href="kontakt.html">Контакт</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menuLinkColorMobile" href="informator.html">Информатор</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="src/images/logoNav.png" alt="Wai Genetics" class="logo">
+        </a>
+        <button class="hamburgerMenuButton navbar-toggler" onclick="openNav(this)" aria-label="Main Menu">
+          <svg width="40" height="40" viewBox="0 0 100 100">
+            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+        <!-- </button> -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <div 
+                class="dropdown"
+                onmouseleave="handleHoverLeave('oNama')"
+              >
+                <a 
+                  class="nav-link underline dropdown-toggle" href="oNama.html"
+                  onmouseover="handleHover('oNama')"  
+                >
+                  О нама
+                </a>
+                <ul 
+                  class="dropdown-menu animate__animated animate__faster" 
+                  id="oNama"
+                >
+                  <li><a class="dropdown-item" href="menadzment.html">Менаџмент</a></li>
+                <li><a class="dropdown-item" href="finansije.html">Финансије</a></li>
+                <li><a class="dropdown-item" href="akta.html">Акта</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div 
+                class="dropdown"
+                onmouseleave="handleHoverLeave('oStarojPlanini')"
+              >
+                <a 
+                  class="nav-link underline dropdown-toggle" href="oStarojPlanini.html" 
+                  onmouseover="handleHover('oStarojPlanini')"
+                >
+                  О Старој планини
+                </a>
+                <ul 
+                  class="dropdown-menu animate__animated animate__faster" 
+                  id="oStarojPlanini" 
+                >
+                  <li><a class="dropdown-item" href="lokacija.html">Локација</a></li>
+                  <li><a class="dropdown-item" href="priroda.html">Природа</a></li>
+                  <li><a class="dropdown-item" href="znamenitosti.html">Знаменитости</a></li>
+                  <li><a class="dropdown-item" href="manifestacije.html">Манифестације</a></li>
+                  <li><a class="dropdown-item" href="smestaj.html">Смештај</a></li>
+                  <li><a class="dropdown-item" href="mape.html">Мапе пешачких стаза</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div 
+                class="dropdown" 
+                onmouseleave="handleHoverLeave('investicije')"
+              >
+                <a 
+                  class="nav-link underline dropdown-toggle" href="investicije.html"
+                  onmouseover="handleHover('investicije')" 
+                >
+                  Инвестиције
+                </a>
+                <ul class="dropdown-menu animate__animated animate__faster" id="investicije">
+                  <li><a class="dropdown-item" href="masterPlan.html">Мастер план</a></li>
+                  <li><a class="dropdown-item" href="urbanistickiPlanovi.html">Урбанистички планови</a></li>
+                  <li><a class="dropdown-item" href="urbanistickiProjekti.html">Урбанистички пројекти</a></li>
+                  <li><a class="dropdown-item" href="katalogZaInvestitore.html">Каталог за инвеститоре</a></li>
+                  <li><a class="dropdown-item" href="javniPozivi.html">Јавни позиви</a></li>
+                  <li><a class="dropdown-item" href="promoSpotovi.html">Промо спотови</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link underline" aria-current="page" href="kontakt.html">Контакт</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link underline" aria-current="page" href="informator.html">Информатор</a>
+            </li>
+            <li class="nav-item pt-2">
+              <a href="indexEN.html">
+                <img src="src/images/english-flag.png" style="height: 20px">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- DESKTOP CONTENT -->
+    <div class="container d-none d-sm-block">
+      <div class="jumbotron">
+        <div class="row">
+          <h1 
+            class="fw-bold logoBlue" 
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1200"
+          >
+            Om Oss
+          </h1>
+          <div 
+            class="col-12" 
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1200"
+          >
+            <p>
+              Wai Genetics er et blått bioteknologi-selskap som monitorerer mikrobiologien i vann. 
+              Vår innsikt kartlegger raskt og presist tilstanden til bakteriebalansen i en vannprøve.
+              <br>
+              <br>
+              Ved hjelp av høypresisjons analyse verktøy, automasjon og maskinlæring gir vi bedre besluttningsgrunnlag for å redusere risiko i biologisk produksjon, og mulighet til mer lønnsom optimalisering.
+            </p>
+            <!-- SLIDERI -->
+            <div class="about" id="content" style="display: none">
+              <!-- DESKTOP -->
+              <div class="slider d-none d-sm-block">
+                <img src="src/images/slide1.jpg" class="img-fluid" id="sliderImg">
+                <img src="src/images/slide2.jpg" class="img-fluid" id="sliderImg">
+                <img src="src/images/slide3.jpg" class="img-fluid" id="sliderImg">
+                <img src="src/images/slide4.jpg" class="img-fluid" id="sliderImg">
+                <img src="src/images/slide5.jpg" class="img-fluid" id="sliderImg">
+                <img src="src/images/slide6.jpg" class="img-fluid" id="sliderImg">
+                <img src="src/images/slide7.jpg" class="img-fluid" id="sliderImg">
+                <img src="src/images/slide8.jpg" class="img-fluid" id="sliderImg">
+                <img src="src/images/slide9.jpg" class="img-fluid" id="sliderImg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TELEFON CONTENT-->
+    <div class="container d-sm-none">
+      <!-- SLIDERI -->
+      <div class="jumbotron">
+        <div class="row">
+          <h1 
+            class="fw-bold logoBlue" 
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1200"
+          >
+            Om Oss
+          </h1>
+          <div 
+            class="col-md-4 col-12"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1200"
+          >
+          </div>
+          <div 
+            class="col-md-8 col-12" 
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1200"
+          >
+            <p>
+              Wai Genetics er et blått bioteknologi-selskap som monitorerer mikrobiologien i vann. 
+              Vår innsikt kartlegger raskt og presist tilstanden til bakteriebalansen i en vannprøve.
+              <br>
+              <br>
+              Ved hjelp av høypresisjons analyse verktøy, automasjon og maskinlæring gir vi bedre besluttningsgrunnlag for å redusere risiko i biologisk produksjon, og mulighet til mer lønnsom optimalisering.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <div class="slider d-sm-none">
+          <img src="src/images/slide1.jpg" class="img-fluid" id="sliderImg">
+          <img src="src/images/slide2.jpg" class="img-fluid" id="sliderImg">
+          <img src="src/images/slide3.jpg" class="img-fluid" id="sliderImg">
+          <img src="src/images/slide4.jpg" class="img-fluid" id="sliderImg">
+          <img src="src/images/slide5.jpg" class="img-fluid" id="sliderImg">
+          <img src="src/images/slide6.jpg" class="img-fluid" id="sliderImg">
+          <img src="src/images/slide7.jpg" class="img-fluid" id="sliderImg">
+          <img src="src/images/slide8.jpg" class="img-fluid" id="sliderImg">
+          <img src="src/images/slide9.jpg" class="img-fluid" id="sliderImg">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <h1 
+            class="fw-bold logoBlue" 
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1200"
+          >
+            Team
+          </h1>
+          <div 
+            class="col-12"
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1200"
+            data-aos-delay="500"
+          >
+            <nav class="mb-3">
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-member1-tab" data-bs-toggle="tab" data-bs-target="#nav-member1" type="button" role="tab" aria-controls="nav-member1" aria-selected="true">
+                  Peter
+                </button>
+                <button class="nav-link" id="nav-member2-tab" data-bs-toggle="tab" data-bs-target="#nav-member2" type="button" role="tab" aria-controls="nav-member2" aria-selected="false">
+                  Kåre
+                </button>
+                <button class="nav-link" id="nav-member3-tab" data-bs-toggle="tab" data-bs-target="#nav-member3" type="button" role="tab" aria-controls="nav-member3" aria-selected="false">
+                  Ørjan
+                </button>
+                <button class="nav-link" id="nav-member4-tab" data-bs-toggle="tab" data-bs-target="#nav-member4" type="button" role="tab" aria-controls="nav-member4" aria-selected="false">
+                  Andrija
+                </button>
+                <button class="nav-link" id="nav-member5-tab" data-bs-toggle="tab" data-bs-target="#nav-member5" type="button" role="tab" aria-controls="nav-member5" aria-selected="false">
+                  Davide
+                </button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-member1" role="tabpanel" aria-labelledby="nav-member1-tab">
+                <div class="row">
+                  <img src="src/images/petter.png" class="img-fluid col-md-3 col-12">
+                  <p class="col-md-9 col-12">
+                    Petter Johansen, CEO og CRO i Wai Genetics AS, mitt mål som leder er å gjøre Wai Genetics til et ledende bioteknologiselskap innen flowcytometri basert vannprøvetaking.
+                    <br>
+                    Bakgrund: Masterstudent i molekylær biologi ved institutt for arktisk og marin biologi ved UiT. Innehar en bachelorgrad i ledelse, innovasjon og marked med fokus på innovasjon og patenter og en blandet bachelorgrad i biologi med fokus på biokjemi, genetikk og flowcytometri. 
+                    <br>
+                    Petter har tidligere arbeidet i 7 år med forskning og utvikling innen flowcytometri ulike planter og vannprøver på Hawaii øyene.
+                    <br>
+                    Kontakt :<br> 
+                    Mobil : +47 46553344<br>
+                    E-post : petter@waigenetics.no<br>
+                  </p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-member2" role="tabpanel" aria-labelledby="nav-member2-tab">
+                <div class="row">
+                  <img src="src/images/kåre.png" class="img-fluid col-md-3 col-12">
+                  <p class="col-md-9 col-12">
+                    CCO. Kåre Johan Teigen, min rolle er å fronte selskapet gjennom kreativitet og kommunikasjon.
+                    <br>
+                    Full av iver fullførte jeg læretiden min i akvakultur, og etter syv års arbeid innen dette feltet fortsatte jeg en bachelorgrad innen ledelse, innovasjon og markedsføring ved Universitetet i Tromsø.
+                    <br>
+                    Min arbeidserfaring gjorde meg lidenskapelig opptatt av lakseproduksjon, og jeg er overbevist at lakseproduksjon kan nå nye høyder gjennom nye teknologier og produksjonsmetoder.
+                    <br>
+                    Kontakt :<br>
+                    Mobil : +47 90823164<br>
+                    E-post : kaare@waigenetics.no<br> 
+                  </p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-member3" role="tabpanel" aria-labelledby="nav-member3-tab">
+                <div class="row">
+                  <img src="src/images/ørjan.png" class="img-fluid col-md-3 col-12">
+                  <p class="col-md-9 col-12">
+                    Ørjan Johnsen, master student informatikk og CTO i Wai Genetics, representerer rollen som prosjektledelse og logistikk. Målet mitt er å bruke maskinlæring på biodata, kombinert med flowcytometri for å åpne nye grenser innen bioteknologi.
+                    <br>
+                    Jobber for tiden med en mastergrad i informatikk, tok en minor i deep programming ved Vrije Universiteit van Amsterdam, og spesialiserte seg videre ved å studere prosjektledelse og psykologi.
+                    <br>
+                    Kontakt :<br> 
+                    Mobil : +47 97622866<br>
+                    E-post : orjan@waigenetics.no<br>
+                  </p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-member4" role="tabpanel" aria-labelledby="nav-member4-tab">
+                <div class="row">
+                  <img src="src/images/andrija.jpg" class="img-fluid col-md-3 col-12">
+                  <p class="col-md-9 col-12">
+                    Andrija Stefanović, medisinstudent, representerer for tiden Wai Genetics AS som salgsagent. Målet mitt er å en dag bli gastroenterolog og gi et bidrag til bedriften innen medisin.
+                    <br>
+                    Fremtil da vil Andrija bruke sin erfaring innen ledelse og salg for å bidra til selskapets vekst. Disse ferdighetene hadde han tilegnet seg mens han representerte Waiawi Arctica AS og som medlem av Universitetet Studentstyret i fire år.
+                    <br>
+                    Kontakt :<br> 
+                    Mobil : +381691999294<br>
+                    E-post : andrew@waigenetics.no<br>
+                  </p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-member5" role="tabpanel" aria-labelledby="nav-member5-tab">
+                <div class="row">
+                  <img src="src/images/davide.png" class="img-fluid col-md-3 col-12">
+                  <p class="col-md-9 col-12">
+                    Davide Rapotez CPO, er en laborant  med mer enn to tiår med erfaring i forskjellige land og laboratoriegrener. I tillegg har han utvidet sitt kunnskapsfelt ved å studere bachelor i psykologi i Tromsø. Hans omfattende laboratoriekunnskap gjør ham til den ideelle kvalitetskontrollspesialisten.<br>
+                    Kontakt :<br>
+                    E-post : davide@waigenetics.no
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer text-center">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h4 class="fw-bold">Wei Genetics</h4><br>
+          <!-- Contact through waimail:
+          <br>
+          <br> -->
+          CCO. Kåre Johan Teigen
+          <br>
+          +47 90823164
+          <br>
+          kaare@waigenetics.no
+          <!-- <br>
+          <br>
+          CEO. Petter Johansen
+          <br>
+          petter@waigenetics.no -->
+        </div>
+        <div class="col-md-4" style="padding-top: 36px">
+          <br>
+          CEO. Petter Johansen
+          <br>
+          petter@waigenetics.no
+        </div>
+        <div class="col-md-4">
+          <h4 class="fw-bold">Get connected</h4><br>
+          <a href="https://www.linkedin.com/company/wai-genetics">
+            <img src="src/images/linkedin-logo.png" class="img-fluid" style="height: 40px;">
+          </a>
+          <a href="https://www.facebook.com/Waigenetics">
+            <img src="src/images/facebook-logo.png" class="img-fluid" style="height: 40px;">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- slick slider requirements -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/parallax.min.js"></script>
+    <script type="text/javascript" src="src/slick/slick.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="src/aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
